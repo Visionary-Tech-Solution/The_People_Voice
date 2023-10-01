@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"); */
+body {
+  margin: 0;
+   font-family: 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #002868;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #B22234; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff; 
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+@layer base {
+  html {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .navbar-color {
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+  }
+}
+@layer components {
+  .navbar-color {
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+  }
+}
+
+.slick-slide > div {
+  margin: 0 0.8rem;
+}
+.slick-dots {
+  visibility: hidden;
+}
+
+.pic:hover .slick-dots {
+  visibility: visible;
+}
+
+ .container-ml {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container-ml {
+      width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container-ml {
+      width: 960px;
+    }
+    
+  }
+  @media (min-width: 1200px) {
+    .container-ml {
+      width: 1140px;
+    }
+  }
+
+
+  @media (min-width: 1400px) {
+    .container-ml {
+      width: 1320px;
+       
+    }
+  }
+
+  .newstler{
+    background-color: rgb(151, 38, 38) !important;
+    clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
+    z-index: inherit;
+    
+    
+  }
+  /* CSS */
+  /* .react-multiple-carousel__arrow--left::before {
+    /* content: "\e824"; */
+ 
+.react-multiple-carousel__arrow  {
+  background-color: #00000054 !important;
+  color: white !important;
+   
+}
+
+.arrow_no_margin .react-multiple-carousel__arrow--right {
+  right:0 !important;
+  z-index:1 !important;
+}  
+.arrow_no_margin .react-multiple-carousel__arrow--left {
+  left:0 !important;
+  z-index:1 !important;
+}
+
+/* about section design  */
+
+.contacts:hover .contacts-footer{
+   display: block;
+   
+}
+.contacts:hover .contact{
+  display: none;
+}
+ .contacts-footer{
+  display: none;
+  
+}
+
+.reading-card{
+  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.05), 4px 4px 4px 3px rgba(0, 0, 0, 0.05) !important;
+  
+}
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+.swiper-pagination {
+  display: none;
+}
+
+ /* subscribe toggle button code  */
+
+ .toggle-accent:checked{
+  background-color: #002868 !important;
+ }
+ .toggle-accent{
+  background-color: red !important;
+ }

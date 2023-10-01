@@ -1,0 +1,7 @@
+Old Glory Red: B22234
+Old Glory Blue: 002868
+White: FFFFFF
+Black: 000000
+
+Text: Noto sans(everywhere)
+Text: Arial(signin and signup)
